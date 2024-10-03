@@ -93,7 +93,11 @@ npm install
 Once you have installed the dependencies, you can start the development server:
 
 ```bash
-npm start
+npm run dev
 ```
 
-This will run the application in development mode. Open http://localhost:3000 to view it in your browser.
+This will run the application in development mode. Open http://localhost:5173 to view it in your browser.
+
+## Live Demo
+
+You can view the live version of the Ecomposer application here: [Ecomposer Live Demo](https://ecomposer-week-task.vercel.app).
