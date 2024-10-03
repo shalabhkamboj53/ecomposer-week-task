@@ -17,7 +17,7 @@ const LeftSection: React.FC = () => {
                 className="mb-3 cursor-pointer"
                 alt=""
                 onClick={() => {
-                  setExclusiveProductFeature({ ...ExcusiveProductFeature! ,Color: el.color })
+                  setExclusiveProductFeature({ ...ExcusiveProductFeature! ,imgColor: el })
                 }}
                 />
               );
@@ -30,7 +30,7 @@ const LeftSection: React.FC = () => {
               <img
                 key={index}
                 src={el.img}
-                className={`${el.color == ExcusiveProductFeature?.Color ? "block" : "hidden"}`}
+                className={`${el.color == ExcusiveProductFeature?.imgColor.color ? "block" : "hidden"}`}
                 alt=""
               />
             );

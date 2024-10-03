@@ -2,13 +2,18 @@ import React from "react";
 import { ProductType } from "../../../../utils/type";
 
 interface CardProps {
-    product: ProductType
+  product: ProductType;
+  index: number;
 }
 
-const Card: React.FC<CardProps> = ({product}) => {
+const Card: React.FC<CardProps> = ({ product, index }) => {
   return (
     <div className="flex flex-col items-center">
-      <div className="bg-black">
+      <div
+        className="bg-black"
+        data-aos="zoom-in"
+        data-aos-delay={(index + 1) * 100}
+      >
         <img
           src={product.imgColor[0].img}
           alt="product"

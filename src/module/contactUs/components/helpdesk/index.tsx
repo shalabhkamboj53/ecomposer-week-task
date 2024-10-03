@@ -6,10 +6,10 @@ const HelpDesk = () => {
   const { HelpDeskData } = useContext(ContactContext);
   return (
     <div className="py-14">
-      <h2 className="text-center text-3xl font-semibold">
+      <h2 className="text-center text-3xl font-semibold" data-aos="fade-up" data-aos-delay="100">
         Browse our help desk
       </h2>
-      <div className="grid grid-cols-3 w-[80%] mx-auto gap-10 mt-14">
+      <div className="grid lg:grid-cols-3 grid-cols-1 lg:w-[80%] w-[95%] mx-auto lg:gap-10 gap-5 mt-14" data-aos="fade-up" data-aos-delay="300">
         {HelpDeskData.map((item, index) => (
           <Card key={index} item={item} />
         ))}

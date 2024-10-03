@@ -10,7 +10,7 @@ interface CardProps {
 const Card = ({ ele, className }: CardProps) => {
   return (
     <div
-      className={`flex flex-col gap-3 items-center justify-center w-full ${className}`}
+      className={`flex flex-col gap-3 items-center justify-center w-full ${className} mb-5`}
     >
       <img
         src={ele?.img}

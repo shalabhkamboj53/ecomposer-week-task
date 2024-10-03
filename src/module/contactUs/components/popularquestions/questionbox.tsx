@@ -30,7 +30,7 @@ interface QuestionBoxProps {
           <p className="text-lg lg:text-2xl text-gray-600 cursor-pointer hover:text-black">
             {faq.que}
           </p>
-          <button className="border border-gray-400 rounded-full p-1 lg:p-2 px-2 lg:px-3 hover:bg-purple-200 hover:text-black transition-colors duration-300 hover:border-transparent">
+          <button className={`border border-gray-400 rounded-full p-1 lg:p-2 px-2 lg:px-3 hover:bg-purple-200 ${isOpen === index && 'bg-purple-200 border-transparent'} hover:text-black transition-colors duration-300 hover:border-transparent`}>
             {isOpen === index ? (
               <i className="bi bi-chevron-up"></i>
             ) : (

@@ -19,17 +19,17 @@ const Footertop: React.FC = () => {
           <p className="mt-3">Sign up for sale, new arrivals & more</p>
         </div>
         <div className="flex items-center justify-between border border-black p-1 flex-wrap">
-          <div className="flex items-center gap-1 lg:gap-3 w-[60%] lg:w-auto mb-2 lg:mb-0 mt-1">
+          <div className="flex items-center gap-1 lg:gap-3 w-[60%] sm:w-auto lg:w-[60%] mb-2 lg:mb-0 mt-1">
             <i className="bi bi-envelope ml-2"></i>
             <input
               type="text"
               name="signup"
               id="signup"
-              className="outline-none border-none flex-grow mr-2 bg-white text-black"
+              className="outline-none border-none flex-grow mr-2 bg-white text-black w-full"
               placeholder="Email address"
             />
           </div>
-          <button className="text-white bg-black px-6 lg:px-6 py-2 lg:py-3 text-sm hover:bg-purple-200 hover:text-black transition-colors duration-500">
+          <button className="text-white bg-black px-6 lg:px-6 w-[40%] sm:w-auto lg:w-[40%] py-2 lg:py-3 text-sm hover:bg-purple-200 hover:text-black transition-colors duration-500">
             Sign Up
           </button>
         </div>
@@ -37,7 +37,7 @@ const Footertop: React.FC = () => {
 
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-3 w-full">
         {ContactFooterData.map((el, index) => (
-          <div key={index} className="flex flex-col gap-3 items-left pl-2">
+          <div key={index} className="flex flex-col gap-3 items-left pl-2 mb-5">
             <h2 className="text-lg text-black font-bold">{el.title}</h2>
             {el.links.map((element, index) => (
               <Link

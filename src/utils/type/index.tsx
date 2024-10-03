@@ -45,7 +45,11 @@ export type ProductType = {
 export type ProductFeatureType = {
   Size: string;
   Planter: string;
-  Color: string;
+  imgColor: {
+    color: string;
+    img: string;
+    name: string;
+  };
 };
 
 export type AsSeenListType = {

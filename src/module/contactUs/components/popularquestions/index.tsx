@@ -9,11 +9,11 @@ const PopularQuestions = () => {
   return (
     <section className="bg-[#e0e0ff] w-full py-20 mb-20 px-4">
       <div className="text-center mb-10 w-full">
-        <h1 className="text-2xl lg:text-4xl text-black">
+        <h1 className="text-2xl lg:text-4xl text-black" data-aos="fade-up" data-aos-delay="100">
           Popular Searched Questions
         </h1>
       </div>
-      <div className="p-4 max-w-7xl mx-auto border rounded-2xl bg-white">
+      <div className="p-4 max-w-7xl mx-auto border rounded-2xl bg-white" data-aos="fade-up" data-aos-delay="200">
         {FaqData.map((faq, index: number) => (
           <>
             <QuestionBox

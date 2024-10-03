@@ -6,14 +6,14 @@ const ColorSelector: React.FC = () => {
     
   return (
     <div className="mb-14">
-        <p className="mt-8 mb-8">Color: {ExcusiveProductFeature?.Color}</p>
+        <p className="mt-8 mb-8">Color: {ExcusiveProductFeature?.imgColor.name}</p>
         <div>
           {ExclusiveProductItem?.imgColor.map((el, index) => {
             return (
               <span
                 key={index}
                 className={`px-6 py-4 border-[1px] rounded-full ${
-                  el.name == ExcusiveProductFeature?.Color
+                  el.name == ExcusiveProductFeature?.imgColor.name
                     ? "border-black"
                     : "border-gray-300"
                 } cursor-pointer relative me-5`}
@@ -22,7 +22,7 @@ const ColorSelector: React.FC = () => {
                   className={`rounded-full px-5 py-5 absolute top-1 left-1`}
                   style={{ backgroundColor: el.color }}
                   onClick={() => {
-                    setExclusiveProductFeature({ ...ExcusiveProductFeature!, Color: el.name });
+                    setExclusiveProductFeature({ ...ExcusiveProductFeature!, imgColor: el });
                   }}
                 ></span>
               </span>
