@@ -84,8 +84,8 @@ Here are some screenshots of the Ecomposer application:
 To get started with this project, clone the repository and install the necessary dependencies:
 
 ```bash
-git clone https://github.com/shalabhkamboj53/ecomposor-week-task.git
-cd ecomposor-week-task
+git clone https://github.com/shalabhkamboj53/ecomposer-week-task.git
+cd ecomposer-week-task
 npm install
 ```
 
