@@ -1,20 +1,21 @@
-# Ecomposor (1 Week Task)
+# eComposer (1 Week Task)
 
-Welcome to the Ecomposor Week Task repository! This project is a modern e-commerce web application that showcases a range of advanced front-end technologies. Below, you'll find a comprehensive overview of the project, including its features, technologies used, and how to get started.
+Welcome to the Ecomposer Week Task repository! This project is a modern e-commerce web application that showcases a range of advanced front-end technologies. Below, you'll find a comprehensive overview of the project, including its features, technologies used, and how to get started.
 
 ## Table of Contents
-
 - [Project Overview](#project-overview)
 - [Features](#features)
+- [Architectural Choices](#architectural-choices)
+- [Development Practices](#development-practices)
 - [Technologies Used](#technologies-used)
+- [Context API Usage](#context-api-usage)
+- [Screenshots](#screenshots)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Project Overview
 
-Ecomposor is a responsive e-commerce web application designed to provide users with an intuitive shopping experience. It leverages various modern technologies to enhance usability, performance, and accessibility. This project serves as an excellent example of building scalable web applications with React.
+Ecomposer is a modern e-commerce web application built using React, designed with a focus on clean code, modular architecture, and best practices in state management. 
 
 ## Features
 
@@ -24,6 +25,20 @@ Ecomposor is a responsive e-commerce web application designed to provide users w
 - **Smooth Animations:** Incorporates AOS (Animate On Scroll) for engaging scrolling animations.
 - **Progressive Web App (PWA):** Provides a native app-like experience, enabling offline access and improved performance.
 - **Dynamic Content (using Context API):** Fetches and displays products dynamically, enhancing user interaction and engagement.
+
+### Architectural Choices
+
+- **Component-Based Structure:** The application is structured into reusable components, promoting reusability and separation of concerns. Each component is responsible for a specific piece of functionality or UI element, making it easier to maintain and test.
+- **Context API for State Management:** Instead of using Redux, I opted for the Context API to manage global state. This decision simplifies state management for the application, reducing boilerplate code and enhancing readability while still avoiding prop drilling.
+- **Styling with Tailwind CSS and DaisyUI:** The use of Tailwind CSS allows for utility-first styling, enabling rapid prototyping and custom designs without leaving the HTML. DaisyUI complements Tailwind by providing pre-designed components, speeding up the development process.
+- **Error Handling:** The application employs `react-error-boundaries` to catch and handle errors gracefully, ensuring a smooth user experience. This allows developers to manage unexpected issues without compromising the entire application.
+- **Animations with AOS:** AOS (Animate On Scroll) is integrated to provide smooth and engaging animations as users scroll through the application, enhancing user interaction.
+
+### Development Practices
+
+- **Code Quality:** I followed best practices for clean and maintainable code, including meaningful naming conventions, component modularity, and thorough documentation within the codebase.
+- **Responsive Design:** The application is built with a mobile-first approach, ensuring that it works seamlessly across various devices and screen sizes.
+- **Progressive Web App (PWA):** The application is designed as a PWA, which enhances performance and provides offline capabilities, delivering a native app-like experience.
 
 ## Technologies Used
 
@@ -50,7 +65,7 @@ By utilizing the Context API, we enhance the maintainability and scalability of 
 
 ## Screenshots
 
-Here are some screenshots of the Ecomposor application:
+Here are some screenshots of the Ecomposer application:
 
 ### Home Page (Desktop View)
 ![Home Page](./screenshots/home-desktop-view.png)
