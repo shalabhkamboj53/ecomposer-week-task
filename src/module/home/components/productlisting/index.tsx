@@ -39,11 +39,10 @@ const ProductListing = () => {
             <Carousel
               responsive={responsive}
               showDots={false}
-              autoPlaySpeed={4000}
               infinite={true}
               swipeable={true}
               arrows={true}
-              autoPlay={true}
+              autoPlay={false}
             >
               {newProducts.map((product, index) => (
                 <div key={index}>

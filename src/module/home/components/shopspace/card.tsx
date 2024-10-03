@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { ProductType } from "../../../../utils/type";
 
 interface CardProps {
@@ -6,11 +6,17 @@ interface CardProps {
 }
 
 const Card: React.FC<CardProps> = ({ product }) => {
+  const [ActiveImgColor, setActiveImgColor] = useState({
+    color: product.imgColor[0].color,
+    img: product.imgColor[0].img,
+    name: product.imgColor[0].name,
+  })
+
   return (
     <div className="flex gap-5 group mb-3">
       <div className="w-[40%]">
         <img
-          src={product.imgColor[0].img}
+          src={ActiveImgColor.img}
           alt="product"
           className="md:w-full w-[50%]"
         />
@@ -24,8 +30,11 @@ const Card: React.FC<CardProps> = ({ product }) => {
           {product.imgColor.map((imgColor, index) => (
             <div
               key={index}
-              className="w-5 h-5 rounded-full bg-[#4ca886] mx-1 border hover:cursor-pointer"
+              className={`w-5 h-5 rounded-full mx-1 border hover:cursor-pointer ${ActiveImgColor.color === imgColor.color ? 'border-[#000000]' : 'border-transparent'}`}
               style={{ backgroundColor: imgColor.color }}
+              onClick={() => {
+                setActiveImgColor(imgColor);
+              }}
             ></div>
           ))}
         </div>
