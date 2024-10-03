@@ -56,7 +56,7 @@ Here are some screenshots of the Ecomposor application:
 ![Home Page](./screenshots/home-desktop-view.png)
 
 ### Home Page (Mobile View)
-![Home Page](./screenshots/product-mobile-view.png)
+![Home Page](./screenshots/home-mobile-view.png)
 
 ### Contact Us Page (Desktop View)
 ![Contact Us Page](./screenshots/contact-us-desktop-view.png)
